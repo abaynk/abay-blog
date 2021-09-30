@@ -1,0 +1,55 @@
+$bebas: "bebas";
+
+@font-face {
+  font-family: $bebas;
+  src: url("../fonts/bebas.ttf") format("truetype");
+}
+
+$playfair: "PlayFair";
+
+@font-face {
+  font-family: $playfair;
+  src: url("../fonts/PlayfairDisplay-Bold.ttf") format("truetype");
+}
+
+$raleway: "Raleway";
+
+@font-face {
+  font-family: $raleway;
+  src: url("../fonts/Raleway-Medium.ttf") format("truetype");
+}
+
+@mixin media($size) {
+  @if $size == desktop {
+    @media (min-width: 1360px) {
+      @content;
+    }
+  } @else if $size == laptop {
+    @media (min-width: 1024px) and (max-width: 1359px) {
+      @content;
+    }
+  } @else if $size == tablet {
+    @media (min-width: 600px) and (max-width: 1023px) {
+      @content;
+    }
+  } @else if $size == mobile {
+    @media (max-width: 599px) {
+      @content;
+    }
+  }
+}
+
+.content {
+  @include media(desktop) {
+    width: 1320px;
+  }
+  @include media(laptop) {
+    width: 936px;
+  }
+  @include media(tablet) {
+    width: 512px;
+  }
+  @include media(mobile) {
+    width: 288px;
+  }
+}

@@ -1,0 +1,41 @@
+@import "../../assets/variables/variables.scss";
+
+.root {
+  width: 1220px;
+  margin: auto;
+  min-height: 100vh;
+  @include media(laptop) {
+    width: 90%;
+  }
+  @include media(tablet) {
+    width: 90%;
+  }
+  @include media(mobile) {
+    width: 100%;
+  }
+}
+.container {
+  width: 100%;
+
+  margin: auto;
+  display: grid;
+  grid-template-columns: 49% 49%;
+  column-gap: auto;
+  row-gap: 25px;
+  justify-content: space-between;
+  @include media(tablet) {
+    grid-template-columns: 100%;
+  }
+  @include media(mobile) {
+    grid-template-columns: 100%;
+  }
+}
+
+.name {
+  font-family: $playfair;
+  font-size: 48px;
+  text-align: center;
+  @include media(mobile) {
+    font-size: 36px;
+  }
+}

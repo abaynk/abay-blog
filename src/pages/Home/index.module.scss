@@ -1,0 +1,46 @@
+@import "../../assets/variables/variables.scss";
+
+.root {
+  margin-bottom: 200px;
+  min-height: 100vh;
+}
+.articlesContainer {
+  width: 1200px;
+  @include media(laptop) {
+    width: 90%;
+  }
+  margin: auto;
+  display: grid;
+  grid-template-columns: 49% 49%;
+  column-gap: auto;
+  row-gap: 25px;
+  justify-content: space-between;
+  @include media(tablet) {
+    width: 90%;
+    grid-template-columns: 100%;
+  }
+  @include media(mobile) {
+    width: 100%;
+    grid-template-columns: 100%;
+  }
+}
+
+.heading {
+  & h1 {
+    font-family: $raleway;
+    font-size: 48px;
+
+    text-align: center;
+    @include media(tablet) {
+      font-size: 40px;
+    }
+    @include media(mobile) {
+      // height: 100px;
+      font-size: 28px;
+    }
+    & span {
+      font-family: $playfair;
+      color: #adb5bd;
+    }
+  }
+}

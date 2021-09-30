@@ -1,0 +1,47 @@
+@import "./assets/variables/variables.scss";
+* {
+  scroll-behavior: smooth !important;
+}
+body {
+  background-color: #f8f9fa;
+  margin: 0;
+  color: #212529;
+  a {
+    text-decoration: none;
+  }
+}
+.ityped-cursor {
+  font-size: 2.2rem;
+  opacity: 1;
+  -webkit-animation: blink 0.3s infinite;
+  -moz-animation: blink 0.3s infinite;
+  animation: blink 0.3s infinite;
+  animation-direction: alternate;
+}
+
+@keyframes blink {
+  100% {
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes blink {
+  100% {
+    opacity: 0;
+  }
+}
+
+@-moz-keyframes blink {
+  100% {
+    opacity: 0;
+  }
+}
+.hamburger-react {
+  display: none;
+  @include media(mobile) {
+    display: inline-block;
+  }
+}
+.app_root {
+  padding-top: 70px;
+}
