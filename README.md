@@ -8,3 +8,4 @@ TODO: #3 add contact me page<br>
 TODO: #4 add subscribe page (add emailjs/mailchimp)<br>
 TODO: #5 connect links to social networks icons<br>
 TODO: #6 improve api requests logic<br>
+TODO: #7 add firebase analytics<br>
