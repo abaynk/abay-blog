@@ -11,6 +11,7 @@
     "axios": "^0.21.4",
     "classnames": "^2.3.1",
     "dotenv": "^10.0.0",
+    "firebase": "^9.1.1",
     "graphql": "^15.5.3",
     "hamburger-react": "^2.4.1",
     "hookrouter": "^1.2.5",
