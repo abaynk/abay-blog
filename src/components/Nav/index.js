@@ -27,7 +27,7 @@ const Nav = () => {
     };
     getCategories();
     setActive(window.location.pathname.split("/")[2]);
-  }, [active]);
+  }, [url]);
 
   return (
     <div className={styles.root}>

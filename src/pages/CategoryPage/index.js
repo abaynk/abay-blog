@@ -18,7 +18,7 @@ const CategoryPage = (props) => {
       }
     };
     getContent();
-  }, [slug]);
+  }, [slug, url]);
 
   useEffect(() => {
     window.scrollTo(0, 0);

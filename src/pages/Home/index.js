@@ -31,7 +31,7 @@ const Home = () => {
       backDelay: 500,
       startDelay: 200,
     });
-  }, []);
+  }, [url]);
 
   useEffect(() => {
     window.scrollTo(0, 0);

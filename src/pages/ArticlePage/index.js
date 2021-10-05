@@ -19,7 +19,7 @@ const ArticlePage = (props) => {
       }
     };
     getArticle();
-  }, [id]);
+  }, [id, url]);
 
   useEffect(() => {
     window.scrollTo(0, 0);

@@ -26,7 +26,7 @@ const Footer = () => {
       }
     };
     getCategories();
-  }, []);
+  }, [url]);
   return (
     <div className={styles.root}>
       <div className={styles.container}>
