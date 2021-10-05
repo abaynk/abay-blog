@@ -48,10 +48,16 @@
     &:hover {
       font-weight: 600;
     }
+    & > a {
+      color: #959fa8;
+    }
   }
   .active {
     color: #000;
     font-weight: 600;
+    & > a {
+      color: #000;
+    }
   }
   @include media(laptop) {
     width: 90%;

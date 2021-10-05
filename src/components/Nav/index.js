@@ -42,21 +42,21 @@ const Nav = () => {
 
           <div className={styles.categories}>
             {categories.map((category, i) => (
-              <NavLink
-                to={`/categories/${category.slug}`}
+              <p
                 key={category.slug + i}
+                className={classNames(
+                  styles.text,
+                  active === category.slug && styles.active
+                )}
+                onClick={() => setActive(i)}
               >
-                <p
+                <NavLink
+                  to={`/categories/${category.slug}`}
                   key={category.slug + i}
-                  className={classNames(
-                    styles.text,
-                    active === category.slug && styles.active
-                  )}
-                  onClick={() => setActive(i)}
                 >
                   {category.name}
-                </p>
-              </NavLink>
+                </NavLink>
+              </p>
             ))}
           </div>
         </div>
